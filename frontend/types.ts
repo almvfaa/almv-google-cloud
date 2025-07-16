@@ -121,3 +121,18 @@ export interface SummaryStats {
     proveedorConMasIncumplimientos: string;
     promedioDiasAtraso: number;
 }
+
+export interface PartidaPAAD {
+  id: string; // UUID
+  clavePresupuestal: string; // ej. '2212'
+  areaRequirente: string; // ej. 'Nutrición y Dietética'
+  descripcionBienServicio: string;
+  cantidadEstimada: number;
+  unidadMedida: string;
+  costoUnitarioEstimado: number;
+  costoTotalEstimado: number;
+  estatus: 'En Captura' | 'Enviado a Finanzas' | 'Validado' | 'Rechazado';
+  observacionesFinanzas?: string;
+  fechaCreacion: Date;
+  fechaValidacion?: Date;
+}
