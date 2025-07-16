@@ -1,0 +1,6 @@
+{
+  "name": "Supplier Compliance Dashboard",
+  "description": "A dashboard to track and analyze supplier compliance issues, with AI-powered insights from Gemini.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
